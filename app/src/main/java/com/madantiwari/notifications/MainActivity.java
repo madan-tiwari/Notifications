@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.madantiwari.notifications.createchannel.CreateChannel;
+
 public class MainActivity extends AppCompatActivity {
     private Button btnDisplay1, btnDisplay2;
     NotificationManagerCompat notificationManagerCompat;
@@ -17,10 +19,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         notificationManagerCompat = NotificationManagerCompat.from(this);
         CreateChannel channel = new CreateChannel(this);
         channel.createChannel();
-
 
         btnDisplay1 = findViewById(R.id.btnDisplay1);
         btnDisplay2 = findViewById(R.id.btnDisplay2);

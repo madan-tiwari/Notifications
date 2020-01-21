@@ -1,4 +1,4 @@
-package com.madantiwari.notifications;
+package com.madantiwari.notifications.createchannel;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
